@@ -1,29 +1,29 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`😎😎😎Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`☹️☹️☹️Assertion Failed: ${actual} != ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`😎😎😎Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`☹️☹️☹️Assertion Failed: ${actual} != ${expected}`);
+//   }
+// };
 
-const eqArrays = function (array1, array2) {
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
+// const eqArrays = function (array1, array2) {
+//   for (let i = 0; i < array1.length; i++) {
+//     if (array1[i] !== array2[i]) {
+//       return false;
+//     }
+//   }
 
-  return true;
-};
+//   return true;
+// };
 
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`😎😎😎Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`☹️☹️☹️Assertion Failed: ${actual} != ${expected}`);
-  };
-};
+// const assertArraysEqual = function (actual, expected) {
+//   if (eqArrays(actual, expected)) {
+//     console.log(`😎😎😎Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`☹️☹️☹️Assertion Failed: ${actual} != ${expected}`);
+//   };
+// };
 
 const middle = function(array) {
   let newArray = [];
@@ -41,16 +41,18 @@ const middle = function(array) {
 };
 
 
-// TEST CODE
-console.log(middle([1]));
-console.log(middle([1, 2]));
+// // TEST CODE
+// console.log(middle([1]));
+// console.log(middle([1, 2]));
 
-console.log(middle([1, 2, 3]));
-console.log(middle([1, 2, 3, 4, 5]));
+// console.log(middle([1, 2, 3]));
+// console.log(middle([1, 2, 3, 4, 5]));
 
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 5, 6]));
+// console.log(middle([1, 2, 3, 4]));
+// console.log(middle([1, 2, 3, 4, 5, 6]));
 // write a middle function that returns only miiddle elements
 // arrays with one or two elements, there is no middle. Return an empty array
 // arrays with odd number of elements, an array containing a single middle element should be returned
 // arrays with an even number of elements, an array containing the two elements in the middle should be returned
+
+module.exports = middle;
