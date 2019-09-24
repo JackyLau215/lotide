@@ -1,6 +1,7 @@
 // const assertEqual = require('../assertEqual');
 const assertArraysEqual = require('../assertArraysEqual');
 const tail = require('../tail');
+const assert = require('chai').assert;
 // const eqArrays = require('../assertEqual');
 
 // TEST CODE
@@ -16,8 +17,8 @@ const tail = require('../tail');
 //   };
 // };
 
-const res = tail([1, 2, 3]); //something
-assertArraysEqual(res, [2,3]);
+// const res = tail([1, 2, 3]); //something
+// assertArraysEqual(res, [2,3]);
 // // step 2
 // const input = ["Hello", "Lighthouse", "Labs"]
 // const result = tail(input);
@@ -28,3 +29,9 @@ assertArraysEqual(res, [2,3]);
 // step 3
 // const emptyInput = [];
 // assertArrayEqual(tail(emptyInput),[]);
+
+describe("#tail", () => {
+  it("returns [1, 2, 3] to [2, 3]", () => {
+    assert.strictEqual(assertArraysEqual(tail([1, 2, 3]), [2, 3]));
+  })
+});
