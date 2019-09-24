@@ -48,3 +48,4 @@ assertEqual(eqArrays(map([1, 2, 3], (x) => x), [3, 2, 1]), false);
 assertEqual(eqArrays(map(["1", "2", "3"], (x) => x), ["1", "2", "3"]), true);
 assertEqual(eqArrays(map(["1", "2", "3"], (x) => x), ["1", "2", 3]), false);
 
+module.exports = map;

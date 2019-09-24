@@ -65,3 +65,4 @@ assertObjectsEqual(ab,ba);
 // const cd2 = {c: "1", d: ["2", 3, 4]};
 
 // TEST CODE
+module.exports = assertObjectsEqual;

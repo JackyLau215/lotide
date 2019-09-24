@@ -25,3 +25,5 @@ console.log(countLetters("lighthouse in the house"));
 
 assertEqual(countLetters("lighthouse in the house")['l'], 1);
 assertEqual(countLetters("lighthouse in the house")['h'], 4);
+
+module.exports = countLetters;

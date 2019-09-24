@@ -43,3 +43,5 @@ const flatten = function (nestedArrays) {
 let actual = flatten([1, 2, [3, 4], 5, [6]]);
 
 assertArraysEqual(actual, [1, 2, 3, 4, 5, 6]);
+
+module.exports = flatten;

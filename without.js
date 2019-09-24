@@ -47,3 +47,5 @@ assertArraysEqual(actual, [2,3]);
 
 actual = without(["1", "2", "3"], [1, 2, "3"])
 assertArraysEqual(actual, ["1", "2"]);
+
+module.exports = without;
